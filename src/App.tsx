@@ -43,14 +43,38 @@ function App() {
           </div>
           <div className="m-0" style={{height: "90%"}}>
             <div className="grid grid-rows-3 grid-cols-4 gap-4" style={{height: "90%"}}>
-              <div className="gridCell row-span-1 col-span-1">01</div>
-              <div className="gridCell row-span-1 col-span-1">02</div>
-              <div className="gridCell row-span-2 col-span-2">03</div>
-              <div className="gridCell row-span-1 col-span-2">04</div>
-              <div className="gridCell row-span-1 col-span-1">06</div>
-              <div className="gridCell row-span-1 col-span-1">07</div>
-              <div className="gridCell row-span-1 col-span-1">08</div>
-              <div className="gridCell row-span-1 col-span-1">09</div>
+              <div className="gridCell row-span-1 col-span-1">
+                <Card width="100%" height="100%">
+                </Card>
+              </div>
+              <div className="gridCell row-span-1 col-span-1">
+                <Card width="100%" height="100%">
+                </Card>
+              </div>
+              <div className="gridCell row-span-2 col-span-2">
+                <Card width="100%" height="100%">
+                </Card>
+              </div>
+              <div className="gridCell row-span-1 col-span-2">
+                <Card width="100%" height="100%">
+                </Card>
+              </div>
+              <div className="gridCell row-span-1 col-span-1">
+                <Card width="100%" height="100%">
+                </Card>
+              </div>
+              <div className="gridCell row-span-1 col-span-1">
+                <Card width="100%" height="100%">
+                </Card>
+              </div>
+              <div className="gridCell row-span-1 col-span-1">
+                <Card width="100%" height="100%">
+                </Card>
+              </div>
+              <div className="gridCell row-span-1 col-span-1">
+                <Card width="100%" height="100%">
+                </Card>
+              </div>
             </div>
           </div>
         </div>
