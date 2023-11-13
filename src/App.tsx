@@ -30,24 +30,31 @@ function App() {
   )
 
   const homePage = (
-    <div className="flex justify-center items-center bg-black" style={{width: '100vw', height: '100vh', margin: '0px', padding: '0px'}}>
-      <Card>
-      <div className="grid grid-rows-3 grid-cols-4 gap-4">
-      <div className="gridCell row-span-1 col-span-1">01</div>
-      <div className="gridCell row-span-1 col-span-1">02</div>
-      <div className="gridCell row-span-2 col-span-2">03</div>
-      <div className="gridCell row-span-1 col-span-2">04</div>
-      <div className="gridCell row-span-1 col-span-1">06</div>
-      <div className="gridCell row-span-1 col-span-1">07</div>
-      <div className="gridCell row-span-1 col-span-1">08</div>
-      <div className="gridCell row-span-1 col-span-1">09</div>
-    </div>
-        <div className="flex p-0 m-0 justify-center items-center">
-          <div onClick={toggleLogin} className="w-fit">
-            <Button> Se déconnecter </Button>
+    <div className="justify-center items-center bg-black">
+      
+      <div className="flex justify-center items-center bg-black m-0 p-0" style={{width: '100vw', height: '100vh'}}>
+        <div style={{width: '80%', height: '100%'}}>
+          <div className="flex justify-end p-0 mt-5 mb-5" style={{height: "5%"}}>
+            <div onClick={toggleLogin} className="w-fit">
+              <button className="p-0" style={{ background: 'transparent' }}> 
+                <span className="text-3xl">Se déconnecter</span>
+              </button>
+            </div>
+          </div>
+          <div className="m-0" style={{height: "90%"}}>
+            <div className="grid grid-rows-3 grid-cols-4 gap-4" style={{height: "90%"}}>
+              <div className="gridCell row-span-1 col-span-1">01</div>
+              <div className="gridCell row-span-1 col-span-1">02</div>
+              <div className="gridCell row-span-2 col-span-2">03</div>
+              <div className="gridCell row-span-1 col-span-2">04</div>
+              <div className="gridCell row-span-1 col-span-1">06</div>
+              <div className="gridCell row-span-1 col-span-1">07</div>
+              <div className="gridCell row-span-1 col-span-1">08</div>
+              <div className="gridCell row-span-1 col-span-1">09</div>
+            </div>
           </div>
         </div>
-      </Card>
+      </div>
     </div>
   )
 
