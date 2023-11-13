@@ -5,9 +5,10 @@ interface LogoCircularFrameProps extends PropsWithChildren{
   src: string;
   alt: string;
   topOffset?: string | number;
+  transform?: string;
 }
 
-export function LogoCircularFrame({width, src, alt, topOffset}: LogoCircularFrameProps){
+export function LogoCircularFrame({width, src, alt, topOffset, transform}: LogoCircularFrameProps){
   const size = typeof width === "string" && width.endsWith("%") ? `${parseFloat(width)}vw` : width;
   return (
     <div style={{
@@ -20,7 +21,7 @@ export function LogoCircularFrame({width, src, alt, topOffset}: LogoCircularFram
       alignItems: "flex-start", 
       overflow: "hidden"
     }}>
-      <img src={src} alt={alt} style={{width: "100%", position: "relative", top: topOffset}}></img>
+      <img src={src} alt={alt} style={{position: "relative", top: topOffset, transform: transform}}></img>
     </div>
   );
 }
