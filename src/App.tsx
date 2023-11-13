@@ -2,6 +2,7 @@ import { Card } from './design/Card'
 import './App.css'
 import { Button } from './design/Button'
 import { useState } from 'react'
+import { LogoCircularFrame } from './design/LogoCircularFrame';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -45,6 +46,7 @@ function App() {
             <div className="grid grid-rows-3 grid-cols-4 gap-4" style={{height: "90%"}}>
               <div className="gridCell row-span-1 col-span-1">
                 <Card width="100%" height="100%">
+                  <LogoCircularFrame width="3vw" src="../public/mario.webp" alt="Mario" topOffset="20%"/>
                 </Card>
               </div>
               <div className="gridCell row-span-1 col-span-1">
